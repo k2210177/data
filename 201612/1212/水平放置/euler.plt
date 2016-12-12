@@ -4,7 +4,7 @@
 # 15:R 16:L 17:F 18:B
 
 set grid
-plot "flightlog.txt" u 1:12 w l t "roll" , "flightlog.txt" u 1:6 w l t "gx"
+plot "flightlog.txt" u 1:12 w l t "roll" , "flightlog.txt" u 1:13 w l t "pitch" , "flightlog.txt" u 1:14 w l t "yaw"
 set terminal postscript eps  enhanced color
-set output "roll.eps"
+set output "euler.eps"
 replot
